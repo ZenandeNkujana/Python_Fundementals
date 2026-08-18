@@ -34,3 +34,12 @@ file.close()
 
 # Display the updated watchlist.
 print(contents)
+
+#Count the movies
+
+#Finally, determine how many movies are currently stored in the file and display the number.
+file = open("watchlist.txt", "r")
+contents = file.readlines()
+file.close()
+
+print(f"There are {len(contents)} movies in your watchlist.")
